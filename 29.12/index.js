@@ -109,10 +109,26 @@ const img = document.querySelector('.image')
 // })
 
 
-// div.addEventListener('mouseout', () => {
-//     div.style.backgroundColor = "blue";
+    // div.addEventListener('mouseout', () => {
+    //     div.style.backgroundColor = "blue";
 
-//     setTimeout(() => {
-//         div.style.backgroundColor = "brown";
-//     }, 500)
-// })
+    //     setTimeout(() => {
+    //         div.style.backgroundColor = "brown";
+    //     }, 500)
+    // })
+
+    // MINE
+    const div = document.querySelector("div")
+
+    div.addEventListener('mouseenter', () => {
+        div.style.visibility = "hidden";
+    })
+
+    div.addEventListener('mouseout', () => {
+        div.style.visibility = "visible";
+        div.style.backgroundColor = "green";
+    
+        setTimeout(() => {
+           div.style.backgroundColor = "brown";
+        }, 5000)
+    })
