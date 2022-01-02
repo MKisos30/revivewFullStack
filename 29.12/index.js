@@ -1,49 +1,47 @@
-const button = document.querySelector('button')
-const img = document.querySelector('.image')
+const button = document.querySelector("button");
+const img = document.querySelector("img")
+//-----------FIRST EX--------//
 
-//---------FIRST EX-------//
-// document.getElementsByClassName('img')
 
-// console.log(buttton)
+// console.log(button)
 
-// button.addEventListener('click', function () {
-//     img.style.display = "block"
-//     button.style.display = "none"
+// button.addEventListener("click", function () {
+//     img.style.display = "block";
+//     button.style.display = "none";
 // })
 
-// img.addEventListener('click', () => {
-//     img.style.display = "none"
-//     button.style.display = "block"
+// img.addEventListener("click", function () {
+//     img.style.display = "none";
+//     button.style.display = "block";
 // })
 
-// -------SECOND EX-------//
+//--------SECOND EX-----//
 // button.addEventListener("click", () => {
 //     img.classList.toggle('isBig')
 // })
 
-// ----------THIRD EX---------//
+//-------THIRD EX--------//
 // button.addEventListener("click", hendleChengeImg)
 
 // function hendleChengeImg() {
 //     img.src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGWQT5tUV3pkyiai1EnGcgrqRvVzxg7xtBHg&usqp=CAU"
 // }
 
-// const div1 = document.querySelector("#one")
-// const div2 = document.querySelector("#two")
-// const div3 = document.querySelector("#tree")
-
+//-----FOURTH EX--------//
+const div1 = document.querySelector("#one")
+const div2 = document.querySelector("#two")
+const div3 = document.querySelector("#tree")
 
 
 // button.addEventListener('click', () => {
 //     div2.scrollIntoView({
 //         behavior: 'smooth', //default: auto
-//         block: 'end', //start, center, end, nearest //default:start //יישור אנכי
+//         block: 'nearest', //start, center, end, nearest //default:start //יישור אנכי
 //         inline: 'center' //start, center, end, nearest //default:nearest //יישור אופקי
 //     })
 // })
 
 // const up = document.querySelector(".up")
-
 // up.addEventListener('click', () => {
 //     window.scrollTo({
 //         top: 0,
@@ -63,19 +61,23 @@ const img = document.querySelector('.image')
 //     }
 // })
 
+//-------- FIFTH EX --------//
 // button.addEventListener('dblclick', function (e) {
 //     button.classList.toggle('large');
 // });
 
+//---------SIXTH EX---------//
 // const text = document.querySelector('#text');
 // const input = document.querySelector('input');
 // const log = document.getElementById('log');
 
+//1.
+// window.addEventListener('keyup', hendleKeyUp)
+//2.
 // window.addEventListener('keyup', hendleKey)
 
-
 // function hendleKeyUp(event) {
-//     // console.log(event)//we can see the "key"
+//     console.log(event)//we can see the "key"
 //     console.log(event.code) //event.key
 
 //     text.innerHTML += `<p>${event.code}</p>`
@@ -97,38 +99,17 @@ const img = document.querySelector('.image')
 //     }
 // }
 
-// const key = 5;
-
-// document.getElementById('text').innerHTML = `The key is ${key}`
-//  "the key is " + key
-
+//-----------SEVENTH EX-------------//
 // const div = document.querySelector("div")
 
 // div.addEventListener('mouseenter', () => {
 //     div.style.backgroundColor = "green";
 // })
 
+// div.addEventListener('mouseout', () => {
+//     div.style.backgroundColor = "blue";
 
-    // div.addEventListener('mouseout', () => {
-    //     div.style.backgroundColor = "blue";
-
-    //     setTimeout(() => {
-    //         div.style.backgroundColor = "brown";
-    //     }, 500)
-    // })
-
-    // MINE
-    const div = document.querySelector("div")
-
-    div.addEventListener('mouseenter', () => {
-        div.style.visibility = "hidden";
-    })
-
-    div.addEventListener('mouseout', () => {
-        div.style.visibility = "visible";
-        div.style.backgroundColor = "green";
-    
-        setTimeout(() => {
-           div.style.backgroundColor = "brown";
-        }, 5000)
-    })
+//     setTimeout(() => {
+//         div.style.backgroundColor = "brown";
+//     }, 500)
+// })
