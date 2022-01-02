@@ -1,23 +1,23 @@
-@import './var2'
-@import './var1'
+@import './var2';
+@import './var1';
 
 
 html {
-    font-size: 14px; 
+    font-size: 14px;
 }
 
-title {
+.title {
     font-size: 2rem;
     color: rgb(63, 45, 60);
     margin-left: 43%;
 }
 
-frequency {
+.frequency {
     margin-left: 39.5%;
     font-size: 1.3rem;
 }
 
-but {
+.but {
     background-color: rgb(152, 97, 219);
     height: 2rem;
     width: 6rem;
@@ -25,11 +25,29 @@ but {
     margin: 0rem 0.5rem;
 }
 
-allDiv {
+.allDiv {
     @include div;
 }
 
-childOne {
+.childOne {
+    border: 1px solid black;
+    text-align: center;
+    // height: 20vh;
+
+
+    &__GB,
+    &__user,
+    &__sendTo {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+    }
+
+    &--sign__price {
+        font-size: $fontSize;
+    }
+
+
+
 
     &__sign {
 
@@ -38,4 +56,3 @@ childOne {
         }
     }
 }
-

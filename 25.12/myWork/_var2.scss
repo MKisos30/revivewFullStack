@@ -1,6 +1,8 @@
 //mixin
 @mixin div {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: rgb(70, 62, 75);
-    display: inline;
+    // display: inline;
+    display: flex;
+    flex-direction: row;
 }
