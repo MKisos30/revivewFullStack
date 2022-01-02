@@ -23,7 +23,7 @@ html {
 
 .allDiv {
   font-size: 1.5rem;
-  color: #463e4b;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -31,11 +31,29 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .childOne {
   border: 1px solid black;
+  border-radius: 0.6em;
   text-align: center;
+  padding: 2%;
+}
+
+.childOne__background {
+  background-color: #9861db;
+  color: white;
+}
+
+.childOne__line {
+  font-size: 0.8em;
+}
+
+.childOne--sign__price {
+  font-size: 2.5em;
 }
 
 .childOne__GB, .childOne__user, .childOne__sendTo {
@@ -43,11 +61,12 @@ html {
   border-bottom: 1px solid grey;
 }
 
-.childOne--sign__price {
-  font-size: 2.5em;
+.childOne__btnDiff {
+  background-color: #9861db;
+  color: white;
 }
 
-.childOne__sign__sign__price {
-  font-size: 2.5em;
+.childOne__sign {
+  padding-bottom: 20%;
 }
 /*# sourceMappingURL=index.css.map */

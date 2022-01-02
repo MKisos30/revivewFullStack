@@ -26,14 +26,29 @@ html {
 }
 
 .allDiv {
-    @include div;
+    @include div($color:black);
 }
 
 .childOne {
     border: 1px solid black;
+    border-radius: 0.6em;
     text-align: center;
+    padding: 2%;
     // height: 20vh;
 
+    &__background {
+        background-color: $color;
+        color: white;
+    }
+
+    &__line {
+        font-size: 0.8em;
+    }
+
+    &--sign__price {
+        font-size: $fontSize;
+        // padding-bottom: 20%;
+    }
 
     &__GB,
     &__user,
@@ -42,17 +57,12 @@ html {
         border-bottom: 1px solid grey;
     }
 
-    &--sign__price {
-        font-size: $fontSize;
+    &__btnDiff {
+        background-color: $color;
+        color: white;
     }
 
-
-
-
     &__sign {
-
-        &__sign__price {
-            font-size: $fontSize;
-        }
+        padding-bottom: 20%;
     }
 }
