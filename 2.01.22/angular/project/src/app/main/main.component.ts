@@ -12,4 +12,10 @@ export class MainComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  click () {
+  //const options = { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' };
+  const date = new Date();
+  const now = date.toLocaleDateString("he-HE")
+  console.log(now)
+  }
 }
