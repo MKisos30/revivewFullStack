@@ -7,11 +7,19 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 };
 exports.__esModule = true;
 exports.ProductListComponent = void 0;
+var products_1 = require("./../products");
 var core_1 = require("@angular/core");
 var ProductListComponent = /** @class */ (function () {
     function ProductListComponent() {
+        this.products = products_1.products;
     }
     ProductListComponent.prototype.ngOnInit = function () {
+    };
+    ProductListComponent.prototype.share = function () {
+        window.alert('The product has been shared!');
+    };
+    ProductListComponent.prototype.onNotify = function () {
+        window.alert('You will be notified when the product goes on sale');
     };
     ProductListComponent = __decorate([
         core_1.Component({
