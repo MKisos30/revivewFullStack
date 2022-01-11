@@ -11,9 +11,11 @@ var core_1 = require("@angular/core");
 var router_1 = require("@angular/router");
 var product_list_component_1 = require("./product-list/product-list.component");
 var product_details_component_1 = require("./product-details/product-details.component");
+var cart_component_1 = require("./cart/cart.component");
 var routes = [
     { path: '', component: product_list_component_1.ProductListComponent },
-    { path: 'products/:productId', component: product_details_component_1.ProductDetailsComponent }
+    { path: 'products/:productId', component: product_details_component_1.ProductDetailsComponent },
+    { path: 'cart', component: cart_component_1.CartComponent },
 ];
 var AppRoutingModule = /** @class */ (function () {
     function AppRoutingModule() {
