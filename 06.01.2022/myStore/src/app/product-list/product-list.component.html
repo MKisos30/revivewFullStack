@@ -5,8 +5,9 @@
 <h2 class="prodLine">Products</h2>
 <div *ngFor="let product of products">
     <h3>
-        <a [title]="product.name + 'details' ">
-            {{ product.name }}
+        <a [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]">
+        {{ product.name }}
         </a>
     </h3>
 
@@ -18,9 +19,9 @@
         Share
     </button>
 
-    <app-product-alerts
+    <!-- <app-product-alerts
     [product]="product"
     (notify)="onNotify()">
-    </app-product-alerts>
+    </app-product-alerts> -->
 </div>
 
