@@ -1,4 +1,4 @@
-import { products, Product } from './../products';
+import { products } from './../products';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -9,7 +9,6 @@ import { Component, OnInit } from '@angular/core';
 export class ProductListComponent implements OnInit {
 
   products = products;
-  private product:Product;
   constructor() { }
 
   ngOnInit(): void {
