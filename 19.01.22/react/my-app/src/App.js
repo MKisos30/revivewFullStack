@@ -4,11 +4,11 @@ import NewApp from './NewApp';
 // import .... from ....
 
 function App() {
-  const img = {
-    src:"https://picsum.photos/200"
-  }
+  // const img = {
+  //   src:"https://picsum.photos/200"
+  // }
 
-  const image = <img src={img.src} alt="text" />
+  // const image = <img src={img.src} alt="text" />
   // function click () {
   //   console.log('hi')
   // }
@@ -48,7 +48,7 @@ function App() {
       {/* <div>{getText()}</div> */}
 
       {/* <img src={img.src} alt="text"/> */}
-      {image}
+      {/* {image} */}
     </>
   )
 }
