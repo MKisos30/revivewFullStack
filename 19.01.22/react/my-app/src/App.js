@@ -1,10 +1,20 @@
 import './App.css';
 
 function App() {
-<<<<<<< HEAD
+
+  // function click () {
+  //   console.log('hi')
+  // }
+
+  // return (
+  //   <>
+  //     <button onClick={click}>click on me</button>
+  //   </>
+  // );
+
   const user = {
-    name:"Matilda",
-    hobbies:"walk"
+    name: "Matilda",
+    hobbies: "walk"
   }
 
   const name = `Miriam`
@@ -12,20 +22,10 @@ function App() {
 
   return (
     <>
-    {element}
-    <div>{user.name} like {user.hobbies}</div>
-=======
-  
-  function click () {
-    console.log('hi')
-  }
-
-  return (
-    <>
-      <button onClick={click}>click on me</button>
->>>>>>> c82914a5c214f01b220bc590de6dcb890789b12c
+      {element}
+      <div>{user.name} like {user.hobbies}</div>
     </>
-  );
+  )
 }
 
 export default App;
