@@ -4,7 +4,11 @@ import NewApp from './NewApp';
 // import .... from ....
 
 function App() {
+  const img = {
+    src:"https://picsum.photos/200"
+  }
 
+  const image = <img src={img.src} alt="text" />
   // function click () {
   //   console.log('hi')
   // }
@@ -42,6 +46,9 @@ function App() {
       {/* <div>{user.name} like {user.hobbies}</div> */}
       {/* <div>{nameUser(user1)}</div> */}
       {/* <div>{getText()}</div> */}
+
+      {/* <img src={img.src} alt="text"/> */}
+      {image}
     </>
   )
 }
