@@ -15,19 +15,33 @@ function App() {
   //   </>
   // );
 
-  const user = {
-    name: "Matilda",
-    hobbies: "walk"
-  }
+  // function nameUser(user) {
+  //   return `${user.name} likes ${user.hobbies}`
+  // }
 
-  const name = `Miriam`
-  const element = <h1>Hi {name}!</h1>
+  // function getText(user) {
+  //   if(user) {
+  //     return <div>{nameUser(user)}</div>
+  //   } else {
+  //     return <div>There is no user</div>
+  //   }
+  // }
+
+  // const user1 = {
+  //   name: "Matilda",
+  //   hobbies: "walk"
+  // }
+
+  // const name = `Miriam`
+  // const element = <h1>Hi {name}!</h1>
 
   return (
     <>
       <NewApp/>
-      {element}
-      <div>{user.name} like {user.hobbies}</div>
+      {/* {element} */}
+      {/* <div>{user.name} like {user.hobbies}</div> */}
+      {/* <div>{nameUser(user1)}</div> */}
+      {/* <div>{getText()}</div> */}
     </>
   )
 }
