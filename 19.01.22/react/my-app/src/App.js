@@ -1,4 +1,5 @@
 import './App.css';
+import NewApp from './NewApp';
 // import {....} from ....
 // import .... from ....
 
@@ -24,6 +25,7 @@ function App() {
 
   return (
     <>
+      <NewApp/>
       {element}
       <div>{user.name} like {user.hobbies}</div>
     </>
