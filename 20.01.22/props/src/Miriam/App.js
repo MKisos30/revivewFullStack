@@ -11,10 +11,12 @@ function App() {
 
     return(
         <>
-            <div>{children.map(item => 
+            <div>
+                {children.map(item => 
                 <Children child = {item}/>
                 // <p>{item.name}</p>
-                ) }</div>
+                ) }
+            </div>
         </>
     )
 }
