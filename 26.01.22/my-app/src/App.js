@@ -1,9 +1,17 @@
 import './App.css';
+import { listName } from './ListNames'
 
 function App() {
+
+
+
   return (
     <>
-    <p>hbvdjksbvkj</p>
+      { listName.map(item => 
+        <div>
+          {item.name}
+        </div>
+      )}
     </>
   );
 }
