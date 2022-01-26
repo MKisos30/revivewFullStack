@@ -1,4 +1,4 @@
-import { AppBar, Card, CardContent, CardMedia, Toolbar, Typography } from '@mui/material';
+import { AppBar, Card, CardContent, CardMedia, Toolbar, Typography, Button } from '@mui/material';
 import './App.css';
 import { listName } from './ListNames'
 
@@ -42,7 +42,12 @@ function App() {
                             <Typography>
                                 Age is: {item.age}
                             </Typography>
-
+                            <Button   onClick={() => {
+                                alert('clicked');
+                              }}
+                            variant="outlined" href="https://www.ynet.co.il/home/0,7340,L-8,00.html">
+                              ynet
+                            </Button>
                         </CardContent>
                     </Card>
                 )}
