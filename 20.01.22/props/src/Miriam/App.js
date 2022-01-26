@@ -4,18 +4,19 @@ import Children from "./Children";
 function App() {
 
     const children = [
-        {name: 'Nechami', age: 12},
-        {name: 'Esti', age: 9},
-        {name: 'Pini', age: 6}
+        { name: 'Nechami', age: 12 },
+        { name: 'Esti', age: 9 },
+        { name: 'Pini', age: 6 }
     ]
 
-    return(
+    return (
         <>
             <div>
-                {children.map(item => 
-                <Children child = {item}/>
-                // <p>{item.name}</p>
-                ) }
+                {children.map(item =>
+                    <Children child={item} />
+                    // <p>{item.name}</p>
+                )}
+                <button onClick={alert('tfjyufuik')} />
             </div>
         </>
     )
