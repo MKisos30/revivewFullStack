@@ -7,6 +7,7 @@ const Item = () => {
   console.log(params);
 
   const [data, setData] = useState();
+  let [x, setX] = useState(0);
 
   useEffect(() => {
     async function fetchData() {
@@ -16,18 +17,26 @@ const Item = () => {
         .then((res) => res.json())
         .then((json) => {
           setData(json);
+          console.log(json);
         })
         .catch((e) => console.log(e));
     }
     fetchData();
   }, []);
 
+  // function getX() {
+  //   setX(x + 1);
+  // }
+
   return (
     <div>
+      {/* <button onClick={getX}>clickOnme</button>
+      {x} */}
       {data ? (
         <div>
           <h1>Atmospheric temperature sensor</h1>
           <ul>
+            {/* data.validity_checks['1148'] */}
             {data.validity_checks[params.id].AT.sol_hours_with_data.map(
               (li) => {
                 return <li key={li}>{li}</li>;
