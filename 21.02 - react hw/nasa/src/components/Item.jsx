@@ -8,7 +8,7 @@ const Item = () => {
   console.log(params);
 
   const [data, setData] = useState();
-  let [x, setX] = useState(0);
+  // let [x, setX] = useState(0);
 
   useEffect(() => {
     async function fetchData() {
@@ -28,6 +28,14 @@ const Item = () => {
   // function getX() {
   //   setX(x + 1);
   // }
+
+  function generate(element) {
+    return data.validity_checks[params.id].AT.sol_hours_with_data.map((value) =>
+      React.cloneElement(element, {
+        key: value,
+      })
+    );
+  }
 
   return (
     <div>
@@ -50,20 +58,15 @@ const Item = () => {
           <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
             Horizontal wind speed sensor
           </Typography>
-          
-          <List>
-                <ListItem>
-                  <ListItemText
-                    primary="Single-line item"
-                    // secondary={secondary ? 'Secondary text' : null}
-                  />
-                </ListItem>,
-            </List>
 
           <ul>
             {data.validity_checks[params.id].HWS.sol_hours_with_data.map(
               (li) => {
-                return <li key={li}>{li}</li>;
+                return (
+                  <li key={li}>
+                    <Typography>{li}</Typography>
+                  </li>
+                );
               }
             )}
           </ul>
