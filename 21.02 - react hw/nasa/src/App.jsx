@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import CardUI from "./components/CardUI";
+import { Grid } from "@mui/material";
 
 function App() {
   const [data, setData] = useState();
@@ -25,12 +26,12 @@ function App() {
   return (
     <div>
       {data ? (
-        <div>
-          <CardUI title={data.validity_checks.sols_checked[0]} />
-          <CardUI title={data.validity_checks.sols_checked[1]} />
-          <CardUI title={data.validity_checks.sols_checked[2]} />
-          <CardUI title={data.validity_checks.sols_checked[3]} />
-        </div>
+        <Grid container spacing={2} justifyContent="center" alignItems="center">
+          <Grid item xs={2}><CardUI title={data.validity_checks.sols_checked[0]} /></Grid>
+          <Grid item xs={2}><CardUI title={data.validity_checks.sols_checked[1]} /></Grid>
+          <Grid item xs={2}><CardUI title={data.validity_checks.sols_checked[2]} /></Grid>
+          <Grid item xs={2}><CardUI title={data.validity_checks.sols_checked[3]} /></Grid>
+        </Grid>
       ) : (
         <div className="spinner">
           <div className="lds-spinner">

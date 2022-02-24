@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import React from "react";
 import { useParams } from "react-router-dom";
+import { Typography, List, ListItem, ListItemText } from "@mui/material";
 
 const Item = () => {
   let params = useParams();
@@ -26,7 +27,9 @@ const Item = () => {
     <div>
       {data ? (
         <div>
-          <h1>Atmospheric temperature sensor</h1>
+          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+            Atmospheric temperature sensor
+          </Typography>
           <ul>
             {data.validity_checks[params.id].AT.sol_hours_with_data.map(
               (li) => {
@@ -35,7 +38,19 @@ const Item = () => {
             )}
           </ul>
 
-          <h1>Horizontal wind speed sensor</h1>
+          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+            Horizontal wind speed sensor
+          </Typography>
+          
+          <List>
+                <ListItem>
+                  <ListItemText
+                    primary="Single-line item"
+                    // secondary={secondary ? 'Secondary text' : null}
+                  />
+                </ListItem>,
+            </List>
+
           <ul>
             {data.validity_checks[params.id].HWS.sol_hours_with_data.map(
               (li) => {
@@ -44,7 +59,9 @@ const Item = () => {
             )}
           </ul>
 
-          <h1>Atmospheric pressure sensor</h1>
+          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+            Atmospheric pressure sensor
+          </Typography>
           <ul>
             {data.validity_checks[params.id].PRE.sol_hours_with_data.map(
               (li) => {
@@ -52,7 +69,9 @@ const Item = () => {
               }
             )}
           </ul>
-          <h1>Wind direction sensor</h1>
+          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+            Wind direction sensor
+          </Typography>
           <ul>
             {data.validity_checks[params.id].WD.sol_hours_with_data.map(
               (li) => {
