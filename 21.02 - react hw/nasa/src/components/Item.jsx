@@ -39,15 +39,12 @@ const Item = () => {
 
   return (
     <div>
-      {/* <button onClick={getX}>clickOnme</button>
-      {x} */}
       {data ? (
         <div>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+          <Typography sx={{ mt: 4, mb: 2, ml: 1, textDecorationLine: 'underline' }} variant="h6" component="div">
             Atmospheric temperature sensor
           </Typography>
           <ul>
-            {/* data.validity_checks['1148'] */}
             {data.validity_checks[params.id].AT.sol_hours_with_data.map(
               (li) => {
                 return <li key={li}>{li}</li>;
@@ -55,10 +52,9 @@ const Item = () => {
             )}
           </ul>
 
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+          <Typography sx={{ mt: 4, mb: 2, ml: 1, textDecorationLine: 'underline' }} variant="h6" component="div">
             Horizontal wind speed sensor
           </Typography>
-
           <ul>
             {data.validity_checks[params.id].HWS.sol_hours_with_data.map(
               (li) => {
@@ -71,7 +67,7 @@ const Item = () => {
             )}
           </ul>
 
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+          <Typography sx={{ mt: 4, mb: 2, ml: 1, textDecorationLine: 'underline' }} variant="h6" component="div">
             Atmospheric pressure sensor
           </Typography>
           <ul>
@@ -81,7 +77,8 @@ const Item = () => {
               }
             )}
           </ul>
-          <Typography sx={{ mt: 4, mb: 2 }} variant="h6" component="div">
+
+          <Typography sx={{ mt: 4, mb: 2, ml: 1, textDecorationLine: 'underline' }} variant="h6" component="div">
             Wind direction sensor
           </Typography>
           <ul>
@@ -92,7 +89,9 @@ const Item = () => {
             )}
           </ul>
         </div>
+
       ) : (
+
         <div className="spinner">
           <div className="lds-spinner">
             <div></div>
