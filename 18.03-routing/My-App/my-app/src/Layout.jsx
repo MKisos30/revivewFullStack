@@ -5,9 +5,9 @@ const Layout = () => {
   return (
     <div>
         <nav className="navBar">
-            <link to="Home">Home</link>
-            <link to="About">About</link>
-            <link to="Contact">Contact</link>
+            <Link to="/">Home</Link>
+            <Link to="About">About</Link>
+            <Link to="Contact">Contact</Link>
         </nav>
 
        <main>
