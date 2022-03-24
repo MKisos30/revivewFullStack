@@ -36,5 +36,11 @@ export function getListItem() {
 }
 
 export function getItem(id) {
-  return orders.find((order) => order.id === id);
+  const data = orders.find((order) => order.id === id)
+
+  if(data) {
+    return data
+  } else {
+    return false
+  }
 }
