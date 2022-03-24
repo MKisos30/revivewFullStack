@@ -1,12 +1,13 @@
-import { Link, Outlet } from "react-router-dom";
+import { Outlet, NavLink } from "react-router-dom";
 
 const Loyout = () => {
   return (
     <div>
       <nav>
-        <Link to="/">Home</Link>
-        <Link to="orders">Orders</Link>
+        <NavLink to="/">Home</NavLink>
+        <NavLink to="orders">Orders</NavLink>
       </nav>
+
       <main>
         <Outlet />
       </main>

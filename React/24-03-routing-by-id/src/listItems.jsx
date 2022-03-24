@@ -30,3 +30,11 @@ const orders = [
     img: "ice.jpeg",
   },
 ];
+
+export function getListItem() {
+  return orders;
+}
+
+export function getItem(id) {
+  return orders.find((order) => order.id === id);
+}
