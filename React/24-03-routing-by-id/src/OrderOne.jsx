@@ -16,7 +16,7 @@ const OrderOne = () => {
     if (item === false) {
       navigate("/orders");
     }
-  }, []);
+  });
 
   return (
     <div>
