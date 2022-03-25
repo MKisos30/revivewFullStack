@@ -1,8 +1,9 @@
-import React from "react";
-import { useParams } from "react-router-dom";
+import React, { useEffect } from "react";
+import { useParams, useNavigate } from "react-router-dom";
 import { getItem } from "./listItems";
 
 const OrderOne = () => {
+  let navigate = useNavigate();
   let param = useParams();
 
   console.log(param);
@@ -10,6 +11,12 @@ const OrderOne = () => {
 
   let item = getItem(param.id);
   console.log(item);
+
+  useEffect(() => {
+    if (item === false) {
+      navigate("/orders");
+    }
+  }, []);
 
   return (
     <div>

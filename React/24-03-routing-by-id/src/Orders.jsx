@@ -34,11 +34,11 @@ const Orders = () => {
         })
         .map((order) => {
           return (
-            <div>
-              <Link to={order.id} key={order.id}>
-                {order.name}
+            
+              <Link to={order.id} >
+                <div key={order.id}>{order.name}</div>
               </Link>
-            </div>
+           
           );
         })}
     </div>
