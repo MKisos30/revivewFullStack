@@ -11,7 +11,7 @@ const Layout = () => {
       </nav>
 
       <main>
-        <Outlet />
+        <Outlet /> {/* EXPORT */}
       </main>
 
       <footer>
