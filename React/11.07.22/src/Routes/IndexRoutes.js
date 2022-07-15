@@ -4,14 +4,14 @@ import {
     Routes,
     Route,
   } from "react-router-dom";
-import Layout from './Layout';
 import App from '../App';
+import Layout from './Layout';
 
-const Index = () => {
+const IndexRoutes = () => {
   return (
    <BrowserRouter>
      <Routes>
-         <Route path="/" element={<Layout />}>
+         <Route path="/" element={<Layout/>}>
             <Route index element={<App/>} />
          </Route>
      </Routes>
@@ -19,4 +19,4 @@ const Index = () => {
   )
 }
 
-export default Index
+export default IndexRoutes;
