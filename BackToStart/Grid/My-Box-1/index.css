@@ -1,0 +1,23 @@
+
+/* BOX1 */
+.BOX1 {
+    display: grid;
+    width: 15%;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.BOX1 div {
+    background-color: brown;
+    padding: 10px;
+    margin: 2%;
+    border-radius: 5px;
+}
+
+.boxA {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.boxB {
+    grid-row-end: span 3;
+}
