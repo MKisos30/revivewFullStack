@@ -49,6 +49,7 @@
       border-radius: 20%;
       box-shadow: 5px 6px 10px lightcoral, -4px -3px 0px 10px rgb(122, 153, 255);
   }
+  
 .root {
     display: grid;
     grid-template-columns: repeat(2, 1fr);

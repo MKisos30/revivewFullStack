@@ -2,14 +2,16 @@
 /* BOX1 */
 .BOX1 {
     display: grid;
-    width: 15%;
+    width: 50%;
     grid-template-columns: repeat(3 ,1fr);
+    row-gap: 10%;
+    column-gap: 2%;
 }
 
 .BOX1 div {
     background-color: brown;
     padding: 10px;
-    margin: 2%;
+    /* margin: 2%; */
     border-radius: 5px;
 }
 
@@ -19,5 +21,10 @@
 }
 
 .boxB {
-    grid-row-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    
+    /* grid-row-end: span 3; */
 }

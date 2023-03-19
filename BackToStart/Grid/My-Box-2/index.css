@@ -3,12 +3,15 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     width: 30%;
+    /* grid-gap: 5%;  */
+    row-gap: 10%;
+    column-gap: 2%;
 }
 
 .BOX2 div {
     background-color: #2f8702;
-    padding: 20px;
-    margin: 2%;
+     padding: 20px;
+    /* margin: 2%; */
     border-radius: 7px;
 }
 
