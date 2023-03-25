@@ -39,7 +39,7 @@ const key = value */
 
 // }
 
-/* 3 - regular function */
+/* 3 - regular function */ 
 // function func1(parameter){
 //     //parameter is what the function get
 
