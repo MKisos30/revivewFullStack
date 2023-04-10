@@ -82,7 +82,7 @@
 // const numFromUser = prompt("Enter a number")
 
 // const reverseFun = (numFromUser) => {
-    
+
 //     return console.log(numFromUser.split('').reverse().join(''))
 // }
 
@@ -110,16 +110,24 @@ const wordFromUser = prompt('Enter your word')
 
 const wordToNumber = (array, wordFromUser) => {
     const word = wordFromUser.toLowerCase().split('')
+
     console.log(word.length)
     console.log(word)
+
+    const arrayOfnumber = []
+
     for (let i = 0; i < word.length; i++) {
-        if(array.includes(word[i])){
-           console.log(word[i])
+        if (array.includes(word[i])) {
+            arrayOfnumber.push(array.indexOf(word[i]) + 1)
+            // console.log(array.indexOf(word[i]) + 1)
         }
-        // if (word.includes(array[i].toLowerCase())) {
-        //     console.log(array[i])
-        // }
     }
+
+    console.log(arrayOfnumber)
+    console.log(arrayOfnumber.toString())
+    console.log(arrayOfnumber.join('*-*'))
+
+
 
 }
 
