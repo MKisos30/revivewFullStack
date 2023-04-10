@@ -81,13 +81,49 @@
 
 // const numFromUser = prompt("Enter a number")
 
-const reverseFun = (numFromUser) => {
+// const reverseFun = (numFromUser) => {
     
-    return console.log(numFromUser.split('').reverse().join(''))
+//     return console.log(numFromUser.split('').reverse().join(''))
+// }
+
+// reverseFun(numFromUser)
+
+
+// *******************
+
+// const lenght = prompt('Enter the lenght of the room')
+// const width = prompt('Enter the width of the room')
+// const height = prompt('Enter the height of the room')
+
+// const roomArea = (lenght, width, height) => {
+//     return console.log(`The volume of the room is ${lenght * width * height}`)
+// }
+
+// roomArea(lenght, width, height)
+
+
+// *******************
+
+const array = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+const wordFromUser = prompt('Enter your word')
+
+const wordToNumber = (array, wordFromUser) => {
+    const word = wordFromUser.toLowerCase().split('')
+    console.log(word.length)
+    console.log(word)
+    for (let i = 0; i < word.length; i++) {
+        if(array.includes(word[i])){
+           console.log(word[i])
+        }
+        // if (word.includes(array[i].toLowerCase())) {
+        //     console.log(array[i])
+        // }
+    }
+
 }
 
-reverseFun(numFromUser)
-
+wordToNumber(array, wordFromUser)
 
 
 
