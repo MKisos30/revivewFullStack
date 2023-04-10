@@ -119,7 +119,6 @@ const wordToNumber = (array, wordFromUser) => {
     for (let i = 0; i < word.length; i++) {
         if (array.includes(word[i])) {
             arrayOfnumber.push(array.indexOf(word[i]) + 1)
-            // console.log(array.indexOf(word[i]) + 1)
         }
     }
 
