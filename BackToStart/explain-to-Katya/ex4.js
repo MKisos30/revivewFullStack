@@ -1,12 +1,34 @@
-const item = [
-    {nameOfBuyer: "Oz"},
-    {item: "pence"},
-    {price: "25$"}
+const sellers = [
+{
+    nameOfBuyer: "Oz",
+    title: "pence",
+    price: "25$"
+},
+{
+    nameOfBuyer: "Natan",
+    title: "watch",
+    price: "350$"
+},
+{
+    nameOfBuyer: "Chaim",
+    title: "book",
+    price: "50$"
+}
 ] 
 
 
-const funcItem = (item) => {
-    const nameOfItem = prompt("enter your item name")
+const funcItem = (sellers) => {
+    const searchByTitle = prompt("enter your item name")
 
-    return 
+    const items = sellers.filter((item) => item.title.toLowerCase() == searchByTitle.toLowerCase())
+
+    console.log(items)
 }
+
+funcItem(sellers)
+
+// const item = [
+//     {nameOfBuyer: prompt('enter your name')},
+//     {item: prompt('enter your price')},
+//     {price: prompt('name of item')}
+// ] 
