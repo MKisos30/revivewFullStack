@@ -4,14 +4,14 @@
 
 // ***********************************
 
-// // 1 - celsius to fahrenheit
+// 1 - celsius to fahrenheit
 
-// const celsius = prompt('Enter celsius')
+// const celsius = +prompt('Enter celsius')
 
 // const convertDegress = (celsius) => {
-//     const fahrenheit = (celsius * 1.8) + 32
+//     return (celsius * 1.8) + 32
 
-//     return fahrenheit
+//     // return fahrenheit
 // }
 
 // console.log(convertDegress(celsius))
@@ -20,12 +20,12 @@
 
 // // 2 - carat to gram
 
-// const ct = prompt('Enter carat')
+// const ct = +prompt('Enter carat')
 
 // const convertCtG = (ct) => {
-//     const gram = ct / 5.0000
+//     return ct / 5.0000
 
-//     return gram
+//     // return gram
 // }
 
 // console.log(convertCtG(ct))
@@ -34,12 +34,12 @@
 
 // // 3 - kilometers to miles
 
-// const kilometer = prompt('Enter kilometres')
+// const kilometer = +prompt('Enter kilometres')
 
 // const convertInterval = (kilometer) => {
-//     const mile = kilometer / 1.6
+//     return kilometer / 1.6
 
-//     return mile
+//     // return mile
 // }
 
 // console.log(convertInterval(kilometer))
