@@ -23,7 +23,7 @@ const sayHelloToUserName = (ev: Event) => {
     console.log(ageOfUser)
 }
 
-const getRandomNumber = (): number => {
+const getRandomNumber = (): number => { //parameter: number did not worked
     return Math.random()
 }
 
@@ -31,3 +31,5 @@ const showRandomNumberFunction = () => {
     const randomNumber = getRandomNumber()
     showRandomNumber.innerHTML = randomNumber.toString()
 }
+
+
