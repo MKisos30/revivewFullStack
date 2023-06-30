@@ -70,17 +70,6 @@ const updateTask = () => {
     console.log(arrayTask)
 }
 
-const updateTaskInDOM = document.querySelector('#updateTask')
-updateTask()
-
-for (let i = 0; i < arrayTask.length; i++) {
-    const task = arrayTask[i]
-    const newTag = document.createElement('p')
-    newTag.textContent = `${task.nameOfTask} : ${task.theTask}`
-    showTaskInDOM.appendChild(newTag)
-}
-
-
 //     2.3. delete task.
 
 const deleteTask = () => {
