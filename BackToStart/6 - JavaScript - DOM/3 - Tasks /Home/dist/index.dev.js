@@ -33,7 +33,21 @@ var newTask = function newTask() {
   var task = new Task(nameOfuserTask, userTask);
   arrayTask.push(task);
   console.log(arrayTask);
-}; //     2.2. update the task.
+}; // const showTaskInDOM = document.querySelector('#showTask')
+// let newTag = document.createElement('p')
+// showTaskInDOM.innerHTML = newTask();
+// showTaskInDOM.appendChild(newTag)
+
+
+var showTaskInDOM = document.querySelector('#showTask');
+newTask();
+
+for (var i = 0; i < arrayTask.length; i++) {
+  var task = arrayTask[i];
+  var newTag = document.createElement('p');
+  newTag.textContent = "".concat(task.nameOfTask, " : ").concat(task.theTask);
+  showTaskInDOM.appendChild(newTag);
+} //     2.2. update the task.
 
 
 var updateTask = function updateTask() {
@@ -47,7 +61,19 @@ var updateTask = function updateTask() {
 
   updateUserTask.theTask = updatedTaskInfo;
   console.log(arrayTask);
-}; //     2.3. delete task.
+};
+
+var updateTaskInDOM = document.querySelector('#updateTask');
+updateTask();
+
+for (var _i = 0; _i < arrayTask.length; _i++) {
+  var _task = arrayTask[_i];
+
+  var _newTag = document.createElement('p');
+
+  _newTag.textContent = "".concat(_task.nameOfTask, " : ").concat(_task.theTask);
+  showTaskInDOM.appendChild(_newTag);
+} //     2.3. delete task.
 
 
 var deleteTask = function deleteTask() {

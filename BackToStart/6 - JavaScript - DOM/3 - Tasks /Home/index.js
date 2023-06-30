@@ -40,6 +40,21 @@ const newTask = () => {
     console.log(arrayTask)
 }
 
+// const showTaskInDOM = document.querySelector('#showTask')
+// let newTag = document.createElement('p')
+// showTaskInDOM.innerHTML = newTask();
+// showTaskInDOM.appendChild(newTag)
+
+const showTaskInDOM = document.querySelector('#showTask')
+newTask()
+
+for (let i = 0; i < arrayTask.length; i++) {
+    const task = arrayTask[i]
+    const newTag = document.createElement('p')
+    newTag.textContent = `${task.nameOfTask} : ${task.theTask}`
+    showTaskInDOM.appendChild(newTag)
+}
+
 //     2.2. update the task.
 
 const updateTask = () => {
@@ -53,9 +68,18 @@ const updateTask = () => {
     updateUserTask.theTask = updatedTaskInfo
 
     console.log(arrayTask)
-
-
 }
+
+const updateTaskInDOM = document.querySelector('#updateTask')
+updateTask()
+
+for (let i = 0; i < arrayTask.length; i++) {
+    const task = arrayTask[i]
+    const newTag = document.createElement('p')
+    newTag.textContent = `${task.nameOfTask} : ${task.theTask}`
+    showTaskInDOM.appendChild(newTag)
+}
+
 
 //     2.3. delete task.
 
