@@ -28,8 +28,40 @@ const careOfKids = new Task("Babysiting", "Need to ask someone to take care of t
 // 2. create method or function (chosse what and when): 
 //     2.1. create new task. 
 
-const newTask () {
-    
+let arrayTask = []
+
+const newTask = () => {
+    const nameOfuserTask = prompt('Enter name of task')
+    const userTask = prompt('Enter naew task')
+
+    const task = new Task(nameOfuserTask, userTask)
+    arrayTask.push(task)
+
+    console.log(arrayTask)
 }
+
 //     2.2. update the task.
+
+const updateTask = () => {
+    const taskToUpdate = prompt("Enter task that you wont to update")
+    const updatedTaskInfo = prompt("Enter what to update")
+    // const nameOfuserTask = prompt('Enter new name of task')
+    // const userTask = prompt('Enter new task')
+
+    const updateUserTask = arrayTask.find(task=> task.nameOfTask === taskToUpdate)
+    // console.log(updateUserTask)
+    updateUserTask.theTask = updatedTaskInfo
+
+    console.log(arrayTask)
+
+
+}
+
 //     2.3. delete task.
+
+const deleteTask = () => {
+    const deleteUserTask = prompt('Enter name task to delete')
+
+    arrayTask = arrayTask.filter(task=>task.nameOfTask !== deleteUserTask)
+    console.log(arrayTask)
+}
