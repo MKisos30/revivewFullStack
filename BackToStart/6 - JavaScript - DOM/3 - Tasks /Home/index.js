@@ -40,20 +40,11 @@ const newTask = () => {
     console.log(arrayTask)
 }
 
-// const showTaskInDOM = document.querySelector('#showTask')
-// let newTag = document.createElement('p')
-// showTaskInDOM.innerHTML = newTask();
-// showTaskInDOM.appendChild(newTag)
-
 const showTaskInDOM = document.querySelector('#showTask')
-newTask()
+let newTag = document.createElement('p')
+showTaskInDOM.innerHTML = newTask();
+showTaskInDOM.appendChild(newTag)
 
-for (let i = 0; i < arrayTask.length; i++) {
-    const task = arrayTask[i]
-    const newTag = document.createElement('p')
-    newTag.textContent = `${task.nameOfTask} : ${task.theTask}`
-    showTaskInDOM.appendChild(newTag)
-}
 
 //     2.2. update the task.
 

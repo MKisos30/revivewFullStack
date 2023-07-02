@@ -33,22 +33,12 @@ var newTask = function newTask() {
   var task = new Task(nameOfuserTask, userTask);
   arrayTask.push(task);
   console.log(arrayTask);
-}; // const showTaskInDOM = document.querySelector('#showTask')
-// let newTag = document.createElement('p')
-// showTaskInDOM.innerHTML = newTask();
-// showTaskInDOM.appendChild(newTag)
-
+};
 
 var showTaskInDOM = document.querySelector('#showTask');
-newTask();
-
-for (var i = 0; i < arrayTask.length; i++) {
-  var task = arrayTask[i];
-  var newTag = document.createElement('p');
-  newTag.textContent = "".concat(task.nameOfTask, " : ").concat(task.theTask);
-  showTaskInDOM.appendChild(newTag);
-} //     2.2. update the task.
-
+var newTag = document.createElement('p');
+showTaskInDOM.innerHTML = newTask();
+showTaskInDOM.appendChild(newTag); //     2.2. update the task.
 
 var updateTask = function updateTask() {
   var taskToUpdate = prompt("Enter task that you wont to update");
